@@ -1,0 +1,64 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+   font-size: xx-large;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+    <header class="header"<h1>HEADER - Sample Flexbox Example</h1></header>
+  <div id="main">
+        <section class="main">
+            <article>
+                <h2>First article</h2>
+
+                <p>An article is a piece of writing written for a large audience. The main motive behind writing an article is that it should be published in either newspapers or magazines or journals so as to make some difference to the world. It may be the topics of interest of the writer or it may be related to some current issues.</p>               
+            </article>
+            <article>
+                <h2>Second article</h2>
+
+                <p>After the popularisation of print media in the late 18th Century, newspapers become a regular thing. The printing press brought with itself the advent of the era of information and knowledge. The easiest way to transfer information about what was happening around the world was the newspaper. Newspapers begin printing early in the morning and are distributed in a systematic manner</p>
+            </article>
+            <article>
+                <h2>Third article</h2>
+                <p>A weekly subscription will mean that the newspaper or the digest is delivered to your family once a week. Similarly, monthly and yearly subscriptions are also present. Yearly subscriptions can be for magazines that deliver not only the news but also other entertaining stories, pictures, and poems.</p>
+            </article>
+        </section>
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
